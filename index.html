@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Infopulse Courses Dashboard</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/css/stylesheet.css">
+	<link rel="stylesheet" href="vendor/jquery-ui.min.css">
+</head>
+<body>
+	<button id="switch-left"></button>
+	<form class="menu">
+		<input type="search" id="search" placeholder="Search:" class="field">
+		<label for="search" class="magnifying-glass"></label>
+		<div class="filters">
+			<input type="checkbox" id="web">
+			<label for="web">Web</label>
+			<input type="checkbox" id="desktop">
+			<label for="desktop">Desktop</label>
+			<input type="checkbox" id="mobile">
+			<label for="mobile">Mobile</label>
+			<input type="checkbox" id="support">
+			<label for="support">Support</label>
+		</div>
+		<input type="text" id="date" class="field date">
+		<label for="date" class="calendar"></label>
+	</form>
+	<table class="projects">
+		<thead>
+			<tr>
+				<th>Project name</th>
+				<th>Due date</th>
+				<th>Created</th>
+				<th>Members</th>
+				<th>Type</th>
+				<th>Status</th>
+				<th>Customer</th>
+				<th><button id="switch-right"></button></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Project name</td>
+				<td>Due date</td>
+				<td>Created</td>
+				<td>Members</td>
+				<td>Type</td>
+				<td>Status</td>
+				<td>Customer</td>
+				<td><button class="recycle"></button></td>
+			</tr>
+			<tr>
+				<td>Project name</td>
+				<td>Due date</td>
+				<td>Created</td>
+				<td>Members</td>
+				<td>Type</td>
+				<td>Status</td>
+				<td>Customer</td>
+				<td><button class="recycle"></button></td>
+			</tr>
+			<tr>
+				<td>Project name</td>
+				<td>Due date</td>
+				<td>Created</td>
+				<td>Members</td>
+				<td>Type</td>
+				<td>Status</td>
+				<td>Customer</td>
+				<td><button class="recycle"></button></td>
+			</tr>
+			<tr>
+				<td>Project name</td>
+				<td>Due date</td>
+				<td>Created</td>
+				<td>Members</td>
+				<td>Type</td>
+				<td>Status</td>
+				<td>Customer</td>
+				<td><button class="recycle"></button></td>
+			</tr>
+			<tr>
+				<td>Project name</td>
+				<td>Due date</td>
+				<td>Created</td>
+				<td>Members</td>
+				<td>Type</td>
+				<td>Status</td>
+				<td>Customer</td>
+				<td><button class="recycle"></button></td>
+			</tr>
+		</tbody>
+	</table>
+	<form class="menu add">
+		<input type="text" id="project-name" placeholder="Project name:" class="field create">
+		<input type="text" id="due-date" placeholder="Due date" class="field create date">
+		<label for="due-date" class="calendar"></label>
+		<input type="text" id="created" placeholder="Created" class="field create date">
+		<label for="created" class="calendar"></label>
+		<input type="text" id="members" placeholder="Members:" class="field create">
+		<input type="text" id="type" placeholder="Type:" class="field create">
+		<input type="text" id="customer" placeholder="Customer:" class="field create">
+		<button type="submit" class="field create-project">Create</button>
+	</form>
+	<footer>
+		<p>Infopulse Courses Dashboard @ 2016</p>
+	</footer>
+	<script type="text/javascript" src="vendor/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="vendor/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

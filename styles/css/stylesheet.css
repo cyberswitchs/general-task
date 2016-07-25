@@ -1,0 +1,219 @@
+body {
+	margin: 0;
+	max-width: 1920px;
+	display: flex;
+	background-color: #0A0B0D;
+	font: 1.125em 'Calibri';
+	color: white;
+	text-transform: uppercase;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+button {
+	border-style: none;
+	cursor: pointer;
+	outline: none;
+	opacity: 0.7;
+	transition: opacity 0.3s;
+	text-align: left;
+	font: 1.125em 'Calibri';
+	color: white;
+	text-transform: uppercase;
+}
+
+label {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 135px;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: opacity 0.3s;
+}
+
+button:hover, label:hover {
+	opacity: 1;
+}
+
+input {
+	border-style: none;
+	color: white;
+	font: 1.125em 'Calibri';
+	text-transform: uppercase;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#switch-left {
+	height: 33px;
+	width: 48px;
+	background: black url('../img/switch-left.png') center no-repeat;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 1;
+}
+
+.menu {
+	height: 100vh;
+	width: 0;
+	opacity: 0;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	transition: width 0.3s, opacity 0.3s;
+	background-color: black;
+	box-sizing: border-box;
+	padding-top: 126px;
+}
+
+.add {
+	position: fixed;
+	right: 0;
+	width: 0;
+}
+
+.show-menu {
+	width: 370px;
+	opacity: 1;
+}
+
+.field {
+	height: 66px;
+	width: 75%;
+	background-color: #221203;
+	border-bottom: 2px solid #C46614;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.create {
+	height: 60px;
+}
+
+.create-project {
+	border: none;
+	background-color: #E67817;
+}
+
+.filters {
+	width: 75%;
+	background-color: #0D0D0D;
+	border-bottom: 2px solid #C46614;
+	color: white;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+	align-items: center;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+.magnifying-glass, .calendar {
+	height: 37px;
+	width: 37px;
+	position: relative;
+	bottom: 63px;
+	left: 117px;
+}
+
+.magnifying-glass {	
+	background-image: url('../img/magnifying-glass.png');
+}
+
+.calendar {	
+	background-image: url('../img/calendar.png');
+}
+
+#switch-right {
+	height: 47px;
+	width: 50px;	
+	background: url('../img/switch-right.png') center no-repeat;
+}
+
+/*replacing default checkbox with custom one*/
+
+input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="checkbox"] + label:before {
+	content: '';
+	height: 48px;
+	width: 58px;
+	background-image: url('../img/uncheck.png');
+	display: inline-block;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: '';
+	background-image: url('../img/check.png');
+}
+
+/*-------------------------------------------------------------*/
+
+/*table*/
+
+.projects {
+	width: 100%;
+	transition: width 0.3s;
+  	border-collapse: collapse;
+  	cursor: default;
+}
+
+.collapse-table {
+	width: calc(100% - 370px);
+}
+
+.projects td {
+	text-align: center;
+}
+
+.projects th, td {
+	font-weight: normal;
+	padding: 10px;
+}
+
+.projects th:first-child, .projects td:first-child {
+	font-weight: bold;
+	border-right: 2px solid grey;
+}
+
+.projects thead tr {
+	border-bottom: 2px solid grey;
+	color: #985013;
+}
+
+.projects tr:nth-of-type(even) {
+	background-color: #0F1012;
+}
+
+.projects tbody tr {
+	transition: background-color 0.1s;
+}
+
+.projects tbody tr:hover {
+	background-color: #353E44;
+}
+
+/*-------------------------------------------------------------*/
+
+.recycle {
+	height: 50px;
+	width: 43px;	
+	background: url('../img/recycle.png') center no-repeat;
+}
+
+footer {
+	background-color: #E67817;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
