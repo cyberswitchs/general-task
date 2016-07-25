@@ -10,3 +10,8 @@
     - dropdowns;
     - JS functionality;
     - responsive design.
+
+  07/25/2016 - fix
+
+    - removed jQueryUI datepicker, now using Kalendae (https://github.com/ChiperSoft/Kalendae) instead;
+    - fix create button position.
