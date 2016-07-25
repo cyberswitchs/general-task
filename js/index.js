@@ -1,9 +1,3 @@
-$(function(){
-	$('.date').each(function() {
-		$(this).datepicker();
-	})
-});
-
 (function() {
 	var switchLeft = document.getElementById('switch-left'),
 		switchRight = document.getElementById('switch-right'),
