@@ -32,4 +32,5 @@
 
   08/01/2016 - hotfix(1.1.1)
 
-    - fix temporary values for dropdowns.
+    - fix temporary values for dropdowns;
+    - added simple current date setter.
