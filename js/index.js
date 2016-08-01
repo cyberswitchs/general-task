@@ -26,7 +26,7 @@
 		};
 	} else if (action == 'right') {
 		menuRight.classList.toggle('show-menu');
-	};
-	
+	};	
 	});
+
 })();
