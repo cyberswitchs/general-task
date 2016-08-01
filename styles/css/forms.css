@@ -40,6 +40,9 @@ input[type="checkbox"] {
   padding-bottom: 10px;
   padding-left: 10px;
 }
+.filters label {
+  width: 80%;
+}
 .filters input[type="checkbox"] + span::before {
   content: '';
   height: 48px;
