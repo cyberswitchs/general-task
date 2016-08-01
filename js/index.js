@@ -4,7 +4,7 @@
 		menuLeft = document.getElementsByClassName('menu-left')[0],
 		menuRight = document.getElementsByClassName('menu-right')[0],
 		menuRightInputs = [].slice.call(menuRight.getElementsByTagName('input')),
-		dashboard = document.getElementsByClassName('dashboard')[0];
+		projectsWrapper = document.getElementsByClassName('projects-wrapper')[0];
 
 	switchLeft.dataset.action = 'left';
 	switchRight.dataset.action = 'right';
@@ -20,7 +20,7 @@
 	if (action !== 'right' && target !== 'menu-right') {
 		if (action == 'left' && target !== 'menu-right') {
 			menuLeft.classList.toggle('show-menu');
-			dashboard.classList.toggle('collapse-table');
+			projectsWrapper.classList.toggle('collapse');
 		} else {
 			menuRight.classList.remove('show-menu');
 		};

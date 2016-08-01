@@ -40,6 +40,48 @@ var projects = [{
 		"Members": "A whole team",
 		"Type": "Web",
 		"Customer": "Random guys"
+}, {
+        "Project name": "Android app",
+        "Due date": "22-12-2016",
+        "Created": "04-05-2016",
+        "Members": "Valera",
+        "Type": "Mobile",
+        "Customer": "Tricky corp"
+}, {
+        "Project name": "Project 404",
+        "Due date": "03-08-2016",
+        "Created": "14-04-2015",
+        "Members": "Valera, Dmitriy",
+        "Type": "Support",
+        "Customer": "Balagan LTD"
+}, {
+        "Project name": "Project 666",
+        "Due date": "22-12-2008",
+        "Created": "23-12-2016",
+        "Members": "Dmitriy, Vovan",
+        "Type": "Web",
+        "Customer": "Feel Good inc."
+}, {
+        "Project name": "iPhone app",
+        "Due date": "09-01-2012",
+        "Created": "04-05-2016",
+        "Members": "Valera, Dmitriy, Vovan",
+        "Type": "Mobile",
+        "Customer": "Apple Corp."
+}, {
+        "Project name": "Project Area-51",
+        "Due date": "22-11-2016",
+        "Created": "04-01-2016",
+        "Members": "Cypher",
+        "Type": "Desktop",
+        "Customer": "Men In Black"
+}, {
+        "Project name": "App for desktop",
+        "Due date": "22-12-2017",
+        "Created": "12-05-2011",
+        "Members": "A whole team",
+        "Type": "Web",
+        "Customer": "Random guys"
 }];
 
 (function(){

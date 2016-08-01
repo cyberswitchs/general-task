@@ -17,6 +17,7 @@ label {
 section {
 	width: 100%;
 	display: flex;
+	flex-flow: row nowrap;
 }
 
 fieldset {
@@ -34,4 +35,17 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+::-webkit-scrollbar {
+	width: 17px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(118, 118, 119, 1);
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }

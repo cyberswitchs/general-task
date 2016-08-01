@@ -46,7 +46,7 @@ input[type="checkbox"] {
 	height: 33px;
 	width: 48px;
 	background: black url('../img/switch-left.png') center no-repeat;
-	position: absolute;
+	position: fixed;
 	top: 15px;
 	left: 15px;
 	z-index: 1;
@@ -59,7 +59,7 @@ input[type="checkbox"] {
 }
 
 .menu-left, .menu-right {
-	height: 100vh;
+	height: calc(100vh - 51px);
 	width: 0;
 	opacity: 0;
 	display: flex;
@@ -70,10 +70,13 @@ input[type="checkbox"] {
 	background-color: black;
 	box-sizing: border-box;
 	padding-top: 60px;
+	padding-bottom: 10px;
+	overflow-y: auto;
 }
 
 .menu-right {
 	position: fixed;
+	top: 0;
 	right: 0;
 }
 
@@ -104,6 +107,7 @@ input[type="checkbox"] {
 	width: 75%;
 	padding-left: 10px;
 	margin-top: 6px;
+	flex-shrink: 0;
 }
 
 .filters {
@@ -137,7 +141,7 @@ input[type="checkbox"] {
 	width: 37px;
 	position: relative;
 	left: 85%;
-	margin-bottom: -30px;
+	margin-bottom: -42px;
 }
 
 .magnifying-glass::before {	
