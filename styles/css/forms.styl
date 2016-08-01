@@ -1,0 +1,137 @@
+button
+	border-style none
+	cursor pointer
+	outline none
+	opacity 0.7
+	transition opacity 0.3s
+	text-align left
+	font 1.125em 'Lato'
+	color white
+	text-transform uppercase
+
+button:hover, label:hover
+	opacity 1
+
+input
+	border-style none
+	color white
+	font 1.125em 'Lato'
+	text-transform uppercase
+	padding 0
+	box-sizing border-box
+	outline none
+
+input[type="checkbox"]
+	position absolute
+	opacity 0
+
+.filters
+	width 75%
+	background-color #0D0D0D
+	border-bottom 2px solid #C46614
+	color white
+	display flex
+	flex-flow column wrap
+	justify-content flex-end
+	align-items center
+	box-sizing border-box
+	margin-top 10px
+	padding-bottom 10px
+	padding-left 10px
+	input[type="checkbox"]
+		& + span
+			&::before
+				content ''
+				height 48px
+				width 58px
+				background-image url('../img/uncheck.png')
+				display inline-block
+	input[type="checkbox"]:checked
+		& + span
+			&::before
+				content ''
+				background-image url('../img/check.png')
+
+.switch-left
+	height 33px
+	width 48px
+	background black url('../img/switch-left.png') center no-repeat
+	position fixed
+	top 15px
+	left 15px
+	z-index 1
+
+.switch-right
+	height 47px
+	width 50px
+	background url('../img/switch-right.png') center no-repeat
+
+.menu-left, .menu-right
+	height calc(100vh - 51px)
+	width 0
+	opacity 0
+	display flex
+	flex-flow column nowrap
+	justify-content flex-start
+	align-items center
+	transition width 0.3s, opacity 0.3s
+	background-color black
+	box-sizing border-box
+	padding-top 60px
+	padding-bottom 10px
+	overflow-y auto
+
+.menu-right
+	position fixed
+	top 0
+	right 0
+
+.show-menu
+	width 370px
+	opacity 1
+
+.user-data-left, .user-data-right
+	width 100%
+	background-color #221203
+	border-bottom 2px solid #C46614
+	padding-left 10px
+
+.user-data-left
+	height 66px
+
+.user-data-right
+	height 60px
+
+.create-project
+	border none
+	background-color #E67817
+	height 66px
+	width 75%
+	padding-left 10px
+	margin-top 6px
+	flex-shrink 0
+
+.magnifying-glass, .calendar, .project-info
+	width 75%
+	box-sizing border-box
+	cursor pointer
+	opacity 0.7
+	transition opacity 0.1s
+	margin-bottom 10px
+
+.magnifying-glass::before, .calendar::before
+	content ''
+	display inline-block
+	height 37px
+	width 37px
+	position relative
+	left 85%
+	margin-bottom -42px
+
+.magnifying-glass
+	&::before
+		background-image url('../img/magnifying-glass.png')
+
+.calendar
+	&::before
+		background-image url('../img/calendar.png')

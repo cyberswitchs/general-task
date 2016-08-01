@@ -1,58 +1,51 @@
 .expand {
-	height: 37px;
-	width: 37px;
-	position: relative;
-	bottom: 47px;
-	left: 86%;
-	background-image: url('../img/expand-more.png');
+  height: 37px;
+  width: 37px;
+  position: relative;
+  bottom: 47px;
+  left: 86%;
+  background-image: url("../img/expand-more.png");
 }
-
 .dropdown {
-	width: 75%;
+  width: 75%;
 }
-
 .expand-input {
-	margin-top: 4px;
-	margin-bottom: -11px;
+  margin-top: 4px;
+  margin-bottom: -11px;
 }
-
 .expand-input:focus {
-	border-bottom: 2px solid white;
+  border-bottom: 2px solid #fff;
 }
-
 .expand-input:focus + label {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
-.list-type, .list-customer {
-	display: none;
-	height: 0;
-	background-color: #221203;
-	margin-top: -28px;
+.list-type,
+.list-customer {
+  display: none;
+  height: 0;
+  background-color: #221203;
+  margin-top: -28px;
 }
-
-.list-type li, .list-customer li {
-	height: 60px;
-	text-align: center;
-	line-height: 60px;
+.list-type li,
+.list-customer li {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
 }
-
-#type-field:focus ~ .list-type, #customer-field:focus ~ .list-customer {
-	display: block;
-	height: auto;
+#type-field:focus ~ .list-type,
+#customer-field:focus ~ .list-customer {
+  display: block;
+  height: auto;
 }
-
 ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
 li {
-	cursor: pointer;
-	transition: background-color 0.3s;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-
 li:hover {
-	background-color: grey;
+  background-color: #808080;
 }

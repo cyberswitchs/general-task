@@ -1,71 +1,61 @@
 .projects-wrapper {
-	width: 100%;
-	transition: width 0.3s;
-	box-sizing: border-box;
-	padding-top: 50px;
+  width: 100%;
+  transition: width 0.3s;
+  box-sizing: border-box;
+  padding-top: 50px;
 }
-
 .projects {
-	width: 100%;
-	border-collapse: collapse;
-	cursor: default;
+  width: 100%;
+  border-collapse: collapse;
+  cursor: default;
 }
-
 .projects-header {
-	width: calc(100% - 17px);
+  width: calc(100% - 17px);
 }
-
 .projects-body {
-	height: calc(100vh - 200px);
-	overflow-y: scroll;
+  height: calc(100vh - 200px);
+  overflow-y: scroll;
 }
-
 .collapse {
-	width: 80%;
+  width: 80%;
 }
-
-td, th {
-	text-align: center;
-	height: 90px;
-	width: 10%;
+td,
+th {
+  text-align: center;
+  height: 90px;
+  width: 10%;
 }
-
-th:first-child, td:first-child {
-	font-weight: bold;
+th:first-child,
+td:first-child {
+  font-weight: bold;
 }
-
-th:nth-child(2)::before, td:nth-child(2)::before {
-	content: '';
-	display: inline-block;
-	width: 2px;
-	height: 16px;
-	background-color: #767677;
-	margin-right: 10%;
+th:nth-child(2)::before,
+td:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #767677;
+  margin-right: 10%;
 }
-
 th:nth-child(2)::before {
-	background-color: #985013;
+  background-color: #985013;
 }
-
 thead tr {
-	border-bottom: 2px solid grey;
-	color: #985013;
+  border-bottom: 2px solid #808080;
+  color: #985013;
 }
-
 tr:nth-of-type(even) {
-	background-color: #0F1012;
+  background-color: #0f1012;
 }
-
 tbody tr {
-	transition: background-color 0.1s;
+  transition: background-color 0.1s;
 }
-
 tbody tr:hover {
-	background-color: #353E44;
+  background-color: #353e44;
 }
-
 .recycle {
-	height: 50px;
-	width: 43px;	
-	background: url('../img/recycle.png') center no-repeat;
+  height: 50px;
+  width: 43px;
+  background: url("../img/recycle.png") center no-repeat;
 }
