@@ -29,3 +29,7 @@
 
     - update styling, temporary using placeholders instead of JSON data due to an error in Mozilla Firefox;
     - added Stylus preprocessing.
+
+  08/01/2016 - hotfix(1.1.1)
+
+    - fix temporary values for dropdowns.
