@@ -27,4 +27,5 @@
 
   08/01/2016 - release(1.1)
 
-    - update styling, temporary using placeholders instead of JSON data due to an error in Mozilla Firefox.
+    - update styling, temporary using placeholders instead of JSON data due to an error in Mozilla Firefox;
+    - added Stylus preprocessing.
