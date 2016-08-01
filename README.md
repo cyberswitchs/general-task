@@ -15,3 +15,12 @@
 
     - removed jQueryUI datepicker, now using Kalendae (https://github.com/ChiperSoft/Kalendae) instead;
     - fix create button position.
+
+  08/01/2016 - fix
+
+    - markup: fix semantics, now using <label><input></label> pattern (except custom dropdowns);
+    - styling.
+
+  08/01/2016 - add
+
+    - add JSON data for dropdowns and dashboard table.
