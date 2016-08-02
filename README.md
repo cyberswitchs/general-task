@@ -25,12 +25,16 @@
 
     - add JSON data for dropdowns and dashboard table.
 
-  08/01/2016 - release(1.1)
+  08/01/2016 - minor(0.1.0)
 
     - update styling, temporary using placeholders instead of JSON data due to an error in Mozilla Firefox;
     - added Stylus preprocessing.
 
-  08/01/2016 - hotfix(1.1.1)
+  08/01/2016 - hotfix(0.1.1)
 
     - fix temporary values for dropdowns;
     - added simple current date setter.
+
+  08/01/2016 - hotfix(0.1.2)
+
+    - fixed table header border.
