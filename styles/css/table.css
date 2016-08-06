@@ -59,3 +59,9 @@ tbody tr:hover {
   width: 43px;
   background: url("../img/recycle.png") center no-repeat;
 }
+.failed td {
+  background-color: #6f0d0f;
+}
+.failed td:nth-child(2)::before {
+  width: 0;
+}

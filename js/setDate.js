@@ -1,20 +1,16 @@
 (function() {	
-	var date = document.getElementById('date'),
-		created = document.getElementById('created'),
+	var currentDateFields = [].slice.call(document.getElementsByClassName('current-date')),
 		currentDate = new Date(),
+		dayRaw = currentDate.getDate(),
 		day,
-		month = currentDate.getMonth() + 1;
-
-	if (currentDate.getDate() < 10) {
-		day = '0' + currentDate.getDate();
-	} else {
-		day = currentDate.getDate();
-	};
-
-	if (currentDate.getMonth() < 10) {
+		monthRaw = currentDate.getMonth(),
+		month = monthRaw + 1,
+		year = currentDate.getFullYear();
+	day = dayRaw < 10 ? '0' + dayRaw : dayRaw;
+	if (month < 10) {
 		month = '0' + month;
-	};
-	
-	date.value = day + '-' + month + '-' + currentDate.getFullYear();
-	created.value = day + '-' + month + '-' + currentDate.getFullYear();
+	};	
+	currentDateFields.forEach(function(input) {
+		input.value = month + '-' + day + '-' + year;
+	});
 })();
