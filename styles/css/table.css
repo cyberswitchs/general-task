@@ -39,6 +39,9 @@ td:nth-child(2)::before {
   background-color: #767677;
   margin-right: 10%;
 }
+th {
+  cursor: pointer;
+}
 th:nth-child(2)::before {
   background-color: #985013;
 }
@@ -64,4 +67,16 @@ tbody tr:hover {
 }
 .failed td:nth-child(2)::before {
   width: 0;
+}
+.sort-asc::after,
+.sort-desc::after {
+  display: inline-block;
+  content: '>';
+  margin-left: 10px;
+}
+.sort-asc::after {
+  transform: rotate(-90deg);
+}
+.sort-desc::after {
+  transform: rotate(90deg);
 }

@@ -1,0 +1,142 @@
+{ 
+	"categories": [{
+		"value": "Project name"
+	}, {
+		"value": "Due date"
+	}, {
+		"value": "Created"
+	}, {
+		"value": "Members"
+	}, {
+		"value": "Type"
+	}, {
+		"value": "Status"
+	}, {
+		"value": "Customer"
+	}], 
+	"typeData": [{
+		"value": "Web"
+	}, {
+		"value": "Desktop"
+	}, {
+		"value": "Mobile"
+	}, {
+		"value": "Support"
+	}], 
+	"customerData": [{
+		"value": "Smooth guys inc."
+	}, {
+		"value": "Great Pulp LTD"
+	}, {
+		"value": "Apple Corp."
+	}],	
+	"projects": [{
+		"Project name": "Project 01",
+		"Due date": "08-02-2016",
+		"Created": "12-21-2015",
+		"Members": "Valera",
+		"Type": "Mobile",
+		"Customer": "Tricky corp",
+		"Status": "none",
+		"id": "1"
+	}, {
+		"Project name": "Project 02",
+		"Due date": "08-05-2016",
+		"Created": "12-04-2015",
+		"Members": "Valera, Dmitriy",
+		"Type": "Support",
+		"Customer": "Balagan LTD",
+		"Status": "none",
+		"id": "2"
+	}, {
+		"Project name": "Project 03",
+		"Due date": "02-12-2008",
+		"Created": "04-12-2016",
+		"Members": "Dmitriy, Vovan",
+		"Type": "Web",
+		"Customer": "Feel Good inc.",
+		"Status": "none",
+		"id": "3"
+	}, {
+		"Project name": "Project 04",
+		"Due date": "09-01-2018",
+		"Created": "04-05-2016",
+		"Members": "Valera, Dmitriy, Vovan",
+		"Type": "Mobile",
+		"Customer": "Apple Corp.",
+		"Status": "none",
+		"id": "4"
+	}, {
+		"Project name": "Project 05",
+		"Due date": "08-11-2015",
+		"Created": "04-01-2016",
+		"Members": "Cypher",
+		"Type": "Desktop",
+		"Customer": "Men In Black",
+		"Status": "none",
+		"id": "5"
+	}, {
+		"Project name": "Project 06",
+		"Due date": "02-22-2017",
+		"Created": "12-05-2011",
+		"Members": "A whole team",
+		"Type": "Web",
+		"Customer": "Random guys",
+		"Status": "none",
+		"id": "6"
+	}, {
+		"Project name": "Project 07",
+		"Due date": "09-12-2016",
+		"Created": "04-05-2016",
+		"Members": "Valera",
+		"Type": "Mobile",
+		"Customer": "Tricky corp",
+		"Status": "none",
+		"id": "7"
+	}, {
+		"Project name": "Project 08",
+		"Due date": "03-08-2016",
+		"Created": "10-04-2015",
+		"Members": "Valera, Dmitriy",
+		"Type": "Support",
+		"Customer": "Balagan LTD",
+		"Status": "none",
+		"id": "8"
+	}, {
+		"Project name": "Project 09",
+		"Due date": "02-12-2008",
+		"Created": "03-15-2016",
+		"Members": "Dmitriy, Vovan",
+		"Type": "Web",
+		"Customer": "Feel Good inc.",
+		"Status": "none",
+		"id": "9"
+	}, {
+		"Project name": "Project 10",
+		"Due date": "09-01-2012",
+		"Created": "04-05-2016",
+		"Members": "Valera, Dmitriy, Vovan",
+		"Type": "Mobile",
+		"Customer": "Apple Corp.",
+		"Status": "none",
+		"id": "10"
+	}, {
+		"Project name": "Project 11",
+		"Due date": "12-11-2016",
+		"Created": "04-01-2016",
+		"Members": "Cypher",
+		"Type": "Desktop",
+		"Customer": "Men In Black",
+		"Status": "none",
+		"id": "11"
+	}, {
+		"Project name": "Project 12",
+		"Due date": "02-12-2017",
+		"Created": "12-05-2011",
+		"Members": "A whole team",
+		"Type": "Web",
+		"Customer": "Random guys",
+		"Status": "none",
+		"id": "12"
+	}]
+}

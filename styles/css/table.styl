@@ -40,6 +40,7 @@ td:nth-child(2)::before
 	margin-right 10%
 
 th
+	cursor: pointer
 	&:nth-child(2)::before
 		background-color #985013
 
@@ -66,4 +67,19 @@ tbody
 	td
 		background-color: #6F0D0F
 		&:nth-child(2)::before
-			width: 0
+			width 0
+
+.sort-asc,
+.sort-desc
+	&::after
+		display inline-block
+		content '>'
+		margin-left 10px
+
+.sort-asc
+	&::after
+		transform rotate(-90deg)
+
+.sort-desc
+	&::after
+		transform rotate(90deg)
