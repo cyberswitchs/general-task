@@ -22,7 +22,6 @@ var module = (function(){
 		currentDirection = 'Asc',
 		currentId = 0,
 		currentFilters = [],
-		currentDateFilters = [],
 		currentSearch = '';
 
 	getData();
@@ -176,12 +175,12 @@ var module = (function(){
 	function setStyle(cell) {
 		switch (cell.dataset.direction) {
 			case 'Asc':
-				cell.classList.add('sort-asc');
-				cell.classList.remove('sort-desc');
+				cell.classList.toggle('sort-asc');
+				cell.classList.toggle('sort-desc', false);
 				break;
 			case 'Desc':
-				cell.classList.add('sort-desc');
-				cell.classList.remove('sort-asc');
+				cell.classList.toggle('sort-desc');
+				cell.classList.toggle('sort-asc', false);
 				break;
 		}
 	}
