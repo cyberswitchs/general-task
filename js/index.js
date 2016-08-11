@@ -231,22 +231,14 @@ var module = (function(){
 	function renderDropdowns() {
 		var listType = document.getElementsByClassName('list-type')[0],
 			listCustomer = document.getElementsByClassName('list-customer')[0],
-			listDate = document.getElementsByClassName('list-date')[0],
 			typeField = document.getElementById('type-field'),
-			customerField = document.getElementById('customer-field'),
-			dateRangeField = document.getElementById('date-range-field');
+			customerField = document.getElementById('customer-field');
 
 		typeData.forEach(function(item) {
 			listType.appendChild(createListItem(item["value"]));
 		});
 		customerData.forEach(function(item) {
 			listCustomer.appendChild(createListItem(item["value"]));
-		});
-
-		var dateRanges = ['Due before', 'Due after', 'Created before', 'Created after'];
-
-		dateRanges.forEach(function(item) {
-			listDate.appendChild(createListItem(item));
 		});
 
 		function createListItem(value) {
@@ -266,11 +258,6 @@ var module = (function(){
 			var projectCustomer = event.target.dataset.value;
 			customerField.value = projectCustomer;
 			checkSubmitButtonState();
-		});
-
-		listDate.addEventListener('mousedown', function(event) {
-			var dateRange = event.target.dataset.value;
-			dateRangeField.value = dateRange;
 		});
 	};
 
