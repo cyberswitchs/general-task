@@ -22,6 +22,7 @@ var module = (function(){
 		currentDirection = 'Asc',
 		currentId = 0,
 		currentFilters = [],
+		currentDateFilters = [],
 		currentSearch = '';
 
 	getData();
@@ -48,7 +49,6 @@ var module = (function(){
 
 	function setDashboardData() {
 		dashboardData = JSON.parse(localStorage.dashboardData);
-		console.log(dashboardData);
 		projects = dashboardData.projects;
 		typeData = dashboardData.typeData;
 		customerData = dashboardData.customerData;
@@ -60,7 +60,6 @@ var module = (function(){
 
 	function renderDashboard() {
 		setStatuses(projects);
-		window.data = dashboardData;
 		createDashboardBody(projects);
 		getCurrentId(projects);
 		createDashboardHeader();
@@ -393,7 +392,6 @@ var module = (function(){
 				data.push(input.value);
 			};
 		});
-		window.inputs = data;
 		return menuRightInputs.length === data.length;
 	}
 
@@ -441,7 +439,6 @@ var module = (function(){
 	textSearch.addEventListener('keydown', function(event) {
 		if (event.keyCode === 13) {
 			var searchString = event.target.value;
-			console.log(searchString);
 			currentSearch = searchString;
 			createDashboardBody(filterData());
 		};
@@ -451,7 +448,6 @@ var module = (function(){
 	dateSearch.addEventListener('keydown', function(event) {
 		if (event.keyCode === 13 && validateStringDate(event.target.value)) {
 			var searchString = event.target.value;
-			console.log(searchString);
 			currentSearch = searchString;
 			createDashboardBody(filterData());
 		};
