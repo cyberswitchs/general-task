@@ -20,23 +20,20 @@
   transform: rotate(180deg);
 }
 .list-type,
-.list-customer,
-.list-date {
+.list-customer {
   display: none;
   height: 0;
   background-color: #221203;
   margin-top: -28px;
 }
 .list-type li,
-.list-customer li,
-.list-date li {
+.list-customer li {
   height: 60px;
   text-align: center;
   line-height: 60px;
 }
 #type-field:focus ~ .list-type,
-#customer-field:focus ~ .list-customer,
-#date-range-field:focus ~ .list-date {
+#customer-field:focus ~ .list-customer {
   display: block;
   height: auto;
 }
